@@ -1,0 +1,58 @@
+/*Template literals*/
+// for concatenation
+let name = 'suman';
+let caste = 'thapa';
+//no complex operation sign and spacings are required
+const fullName = `${name} ${caste}`;
+console.log(fullName);
+
+// for numbers
+let num1 = 1;
+let num2 = 2;
+const addition =  `${num1 + num2}`;
+console.log(addition);
+
+// for new lines
+let myName = 'Punam';
+let myCaste = 'thapa';
+
+const myFullName = `${myName}
+${myCaste}`;
+console.log(myFullName);
+
+/*Destructuring Objects*/
+const personalInformation = {
+  firstName: 'Kamal',
+  lastName: 'Thapa'
+};
+const {firstName, lastName: ln} = personalInformation;
+console.log(`${firstName} ${ln}`);
+
+let [oldest, older, old] = ['punam', 'kamal', 'suman'];
+oldest = 'Punam';
+older = 'Kamal';
+old = 'Suman'; //see literally no indexing is required
+console.log(`${oldest} ${older}`);
+
+/*Object Literals*///minimizes duplication of code
+function adressMaker(city, state) {
+  const newAddress = {city, state};
+  return newAddress;
+}
+adressMaker('kathmandu', 'Bagmati');
+//paused at 11min
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
